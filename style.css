@@ -54,3 +54,14 @@ header {
 .portfolio-item a:hover {
     text-decoration: underline;
 }
+
+figure {
+    margin: 0;
+    text-align: center; /* Center the image and caption */
+}
+
+figcaption {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
