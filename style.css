@@ -14,14 +14,17 @@ header {
 }
 
 .container {
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .portfolio-item {
     background-color: white;
-    margin-bottom: 20px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -57,11 +60,18 @@ header {
 
 figure {
     margin: 0;
-    text-align: center; /* Center the image and caption */
+    text-align: center;
 }
 
 figcaption {
     font-size: 14px;
     color: #666;
     margin-top: 5px;
+}
+
+/* Media query for single-column layout on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
 }
