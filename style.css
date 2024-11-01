@@ -41,8 +41,8 @@ header {
 
 .portfolio-item img {
     width: 100%;
-    max-width: 800px;
-    height: auto;
+    max-height: 315px;
+    width: auto;
     border-radius: 5px;
     border: black 1px solid;
 }
@@ -84,4 +84,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
